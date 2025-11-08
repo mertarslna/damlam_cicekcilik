@@ -50,9 +50,9 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
 <div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
 <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
-<div class="container mx-auto px-4">
-<div class="flex items-center justify-between whitespace-nowrap py-4">
-<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="container mx-auto px-4 py-4">
+<div class="flex items-center justify-between">
+<a href="index.html" class="flex items-center gap-4 text-text-light dark:text-text-dark">
 <div class="text-primary size-7">
 <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
@@ -60,20 +60,20 @@
 </svg>
 </div>
 <h2 class="text-xl font-bold tracking-tight">Damlam Çiçekçilik</h2>
-</div>
-<div class="hidden lg:flex flex-1 justify-center gap-8">
-<div class="flex items-center gap-9">
-<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Kategoriler</a>
-<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Hakkımızda</a>
-<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">İletişim</a>
-</div>
-</div>
+</a>
+            <div class="hidden lg:flex flex-1 justify-center gap-8">
+            <div class="flex items-center gap-9">
+                <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Kategoriler</a>
+                <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Hakkımızda</a>
+                <a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">İletişim</a>
+            </div>
+            </div>
 <div class="flex items-center gap-2">
 <button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-light dark:text-text-dark transition-colors">
 <span class="material-symbols-outlined text-2xl">search</span>
 </button>
-<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-light dark:text-text-dark transition-colors">
-<span class="material-symbols-outlined text-2xl">shopping_bag</span>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 bg-primary/20 hover:bg-primary/30 text-text-light dark:text-text-dark gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 w-10">
+<span class="material-symbols-outlined">shopping_bag</span>
 </button>
 <button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-transparent hover:bg-black/5 dark:hover:bg-white/5 text-text-light dark:text-text-dark transition-colors">
 <span class="material-symbols-outlined text-2xl">person</span>
@@ -85,12 +85,12 @@
 </div>
 </div>
 </header>
-<main class="container mx-auto px-4 py-8">
+<main class="container mx-auto px-4 pt-20 pb-8">
 <div class="mb-8">
 <div class="flex flex-wrap gap-2 text-sm mb-4">
-<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Ana Sayfa</a>
+<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="index.html">Ana Sayfa</a>
 <span class="text-text-light/50 dark:text-text-dark/50">/</span>
-<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Buketler</a>
+<a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="product_listing.html">Buketler</a>
 <span class="text-text-light/50 dark:text-text-dark/50">/</span>
 <span class="text-text-light dark:text-text-dark font-medium">Güller</span>
 </div>
@@ -165,11 +165,11 @@
 </div>
 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
 <div class="group relative flex flex-col">
-<div class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<a href="detail.html" class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 <img alt="A beautiful bouquet of classic red roses, tightly arranged." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTC_ht_vH8aY1qi2NcvPRLqXqRO4-WX4eBHGBXe_lplrHCT6G91UsIb8T8lENR2_O_9_JlDIsZXMr-_53oc3DBYufOmLbqTzT6GMIQ4ROpsps8DEZAQ7bLzgFYacfzZEHQ_FelwkZudSi2osZzrp4Gd3CChjRIU8YtaonLd5855jLlyPVUpkSr2KBSpHgagGlXF6dTOlkBVXo9ODg56eWtXbUUxMnrcQsg4muwUHzSGKVJvyghc1IHo62udJIfrIxb1Um5Jm5Drg"/>
-</div>
+</a>
 <div class="mt-4 flex flex-col">
-<h3 class="text-base font-medium">Klasik Kırmızı Güller</h3>
+<a href="detail.html" class="text-base font-medium hover:text-primary transition-colors">Klasik Kırmızı Güller</a>
 <p class="mt-1 text-lg font-semibold">750,00 ₺</p>
 </div>
 <button class="absolute bottom-20 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-secondary dark:hover:bg-secondary/90 text-text-light hover:text-white">
@@ -177,11 +177,11 @@
 </button>
 </div>
 <div class="group relative flex flex-col">
-<div class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<a href="detail.html" class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 <img alt="A dreamy bouquet featuring a mix of pastel pink and white roses." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSfzd_maYAWFwl90-fle1XbVK2EpaJE4PXQ3tj8HDbrotw5lNOrAVFDcf6Wt9xDfL0rvDwtbu17WfrgmVWof2RWRbtKRpR1zUhk6sA199orMwBeWm1YRuiqrQ4ho9gBpJFnUmJzw2qFYXhgqe1OmYNSRsnp_sopEcDj5RLpvH0e3XLHjbUv3mDbrIPbAhAPq1-MtTFZ4Hfn8FiagLxFSYgmQvaVbIi6OPl81TNVOnx5SmLR5T13Hh6P4heY0sk9X0CiBxkO2hc2A"/>
-</div>
+</a>
 <div class="mt-4 flex flex-col">
-<h3 class="text-base font-medium">Pastel Rüya Buketi</h3>
+<a href="detail.html" class="text-base font-medium hover:text-primary transition-colors">Pastel Rüya Buketi</a>
 <p class="mt-1 text-lg font-semibold">850,00 ₺</p>
 </div>
 <button class="absolute bottom-20 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-secondary dark:hover:bg-secondary/90 text-text-light hover:text-white">
@@ -189,11 +189,11 @@
 </button>
 </div>
 <div class="group relative flex flex-col">
-<div class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<a href="detail.html" class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 <img alt="An elegant arrangement of sunshine yellow roses, radiating warmth." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjWkIRzkvhq6Er0x3yVv5a8LpTbwjgHEKU6hImfzFHaAQMOIQr43Ostrxe1Axb3J3n2XYSmXYenz5NoOzAZggg0eoE3j28c_3bIq-PBSfNTTEqJuP-Wpkix-SG_cLmLAUIxijQF9Kr3vcFkQms0NKi3rTgCwMMzvnZMkyFEycoJzEU4iyXwg0BVtkqidmVctG0mm_SycDHQNJdIk5iub3uKCAo1APYW40nGCe_xeogOYFKKWtfTNU2-dnShkEbJ6oNui6YarA2vQ"/>
-</div>
+</a>
 <div class="mt-4 flex flex-col">
-<h3 class="text-base font-medium">Güneş Işığı Sarı Güller</h3>
+<a href="detail.html" class="text-base font-medium hover:text-primary transition-colors">Güneş Işığı Sarı Güller</a>
 <p class="mt-1 text-lg font-semibold">650,00 ₺</p>
 </div>
 <button class="absolute bottom-20 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-secondary dark:hover:bg-secondary/90 text-text-light hover:text-white">
@@ -201,11 +201,11 @@
 </button>
 </div>
 <div class="group relative flex flex-col">
-<div class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<a href="detail.html" class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 <img alt="A pure and simple bouquet of crisp white roses." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGwozOjQDVrGcY2n-JILe9yf4KIwCKGW6pMUQaPdly-Ypot3cmDscCBXVU6gHrDOPLco0nj07wXLGPtunZMfqTb69j0llwuRRjPs--rykJBZysa4LrU7LF-xmt27RBuJPd0kWHR-rcF_6f33CS8RVfwki35Rs7ns1UhP_TQkoPlzbPoZCHMcMM0dqWLqwkWbQrfa7hEaAom7BPMyYszbSkgrYZZ4KQTu_ybS2SLA5TM3PR6Kt4fLGHP9AFdNANIn8KPKz9ZZiM6Q"/>
-</div>
+</a>
 <div class="mt-4 flex flex-col">
-<h3 class="text-base font-medium">Fildişi Zarafeti Gülleri</h3>
+<a href="detail.html" class="text-base font-medium hover:text-primary transition-colors">Fildişi Zarafeti Gülleri</a>
 <p class="mt-1 text-lg font-semibold">700,00 ₺</p>
 </div>
 <button class="absolute bottom-20 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-secondary dark:hover:bg-secondary/90 text-text-light hover:text-white">
@@ -213,11 +213,11 @@
 </button>
 </div>
 <div class="group relative flex flex-col">
-<div class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<a href="detail.html" class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 <img alt="A romantic mix of deep red and soft pink roses." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrMMtIckwTshcz7zsSraBCq-rFWi3uf7aZQfzE2BoWWpZ6pWxcPQhQpn-8l1mVuNLAjTVOYpxprjmg9pbJK5Hk6_8BIyjkRtaVukgTbYk3Gl2gcUVHtMK7DAY09Dvzuurk3nei0RVEVgIhv_n2XHNOtcRUusFyWUDHSjTd3SixOxHsjxUH9KeqF3WgqRJZDTCEumtD48PRhZh-uHaNsCvHnpbgrfBUL0yRcrbW_guF7oNpFtxPN-7oL9nMvLUuxNvrykIpERIeOg"/>
-</div>
+</a>
 <div class="mt-4 flex flex-col">
-<h3 class="text-base font-medium">Utangaç Romantizm Karışımı</h3>
+<a href="detail.html" class="text-base font-medium hover:text-primary transition-colors">Utangaç Romantizm Karışımı</a>
 <p class="mt-1 text-lg font-semibold">900,00 ₺</p>
 </div>
 <button class="absolute bottom-20 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-secondary dark:hover:bg-secondary/90 text-text-light hover:text-white">
@@ -225,11 +225,11 @@
 </button>
 </div>
 <div class="group relative flex flex-col">
-<div class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
+<a href="detail.html" class="aspect-square w-full overflow-hidden rounded-xl bg-gray-100 dark:bg-gray-800">
 <img alt="A single, perfectly bloomed red rose presented simply." class="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIjyl834-qjDj2A_bYfO70mLBAuEv7779cKy5XIvPG4C22f3UTJOV2o6WWhasCSxEMg-KssFavUVw3ss_fQhaKRZD8n9yurfX--lL4S4i0D3tBGsAXYn3i51I95wqsYRNT1gtCqgH6PYd2UgU9-UzrNOg0DOmSXh7bIMAR8ZQaIV8-1JDVyUVAj0md4XO27BHQGtnDOnusaflLpEYPH-IkU9kKnCifDM42lkNcyQML9BbZo-fSpX3g5kCTuqCFZvVI7r1K5LDUww"/>
-</div>
+</a>
 <div class="mt-4 flex flex-col">
-<h3 class="text-base font-medium">Tek Kırmızı Gül</h3>
+<a href="detail.html" class="text-base font-medium hover:text-primary transition-colors">Tek Kırmızı Gül</a>
 <p class="mt-1 text-lg font-semibold">250,00 ₺</p>
 </div>
 <button class="absolute bottom-20 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-background-light dark:bg-background-dark shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 hover:bg-secondary dark:hover:bg-secondary/90 text-text-light hover:text-white">
@@ -264,17 +264,17 @@
 <div>
 <h3 class="font-semibold tracking-wide">Mağaza</h3>
 <ul class="mt-4 space-y-2 text-sm">
-<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Tüm Koleksiyonlar</a></li>
-<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Güller</a></li>
-<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Bitkiler</a></li>
+<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="product_listing.html">Tüm Koleksiyonlar</a></li>
+<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="product_listing.html">Güller</a></li>
+<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="product_listing.html">Bitkiler</a></li>
 </ul>
 </div>
 <div>
 <h3 class="font-semibold tracking-wide">Hakkımızda</h3>
 <ul class="mt-4 space-y-2 text-sm">
-<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Hikayemiz</a></li>
-<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">Bize Ulaşın</a></li>
-<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="#">SSS</a></li>
+<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="about_us.html">Hikayemiz</a></li>
+<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="contact.html">Bize Ulaşın</a></li>
+<li><a class="text-text-light/70 dark:text-text-dark/70 hover:text-primary" href="about_us.html#faq">SSS</a></li>
 </ul>
 </div>
 <div>
