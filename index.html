@@ -22,9 +22,12 @@
 
     /* Header */
     .site-header{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,rgba(255,255,255,0.95),rgba(255,255,255,0.9));backdrop-filter:blur(6px);border-bottom:1px solid var(--gray)}
-    .nav{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
-    .logo{font-weight:700;color:var(--pink);font-size:1.25rem;letter-spacing:0.2px}
-    .menu{display:flex;gap:18px;align-items:center}
+  .nav{max-width:var(--max-width);margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;gap:12px}
+  .logo{font-weight:700;color:var(--pink);font-size:1.15rem;letter-spacing:0.2px}
+  /* Mobile menu toggle */
+  .menu-toggle{display:none}
+  .hamburger{display:none;width:42px;height:36px;align-items:center;justify-content:center;border-radius:8px}
+  .menu{display:flex;gap:18px;align-items:center}
     .menu a{color:#333;text-decoration:none;font-weight:600;padding:8px 10px;border-radius:8px}
     .menu a:hover{background:#fff;box-shadow:var(--shadow)}
     .btn-contact{background:var(--pink);color:var(--white);padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:600}
@@ -76,12 +79,24 @@
       .products-grid{grid-template-columns:repeat(2,1fr)}
       .hero .inner{flex-direction:column;align-items:flex-start}
     }
+    @media (max-width:780px){
+      /* show hamburger and hide desktop menu */
+      .hamburger{display:flex}
+      .menu{position:fixed;right:12px;top:62px;flex-direction:column;background:var(--white);padding:12px;border-radius:10px;box-shadow:var(--shadow);display:none}
+      .menu a{display:block;padding:8px 12px}
+      .menu-toggle:checked + .hamburger{background:rgba(0,0,0,0.04)}
+      .menu-toggle:checked ~ .menu{display:flex}
+    }
     @media (max-width:640px){
-      .nav{padding:12px}
-      .menu{display:none}
-      .hero{padding:56px 16px}
+      .nav{padding:10px}
+      .hero{padding:48px 14px}
+      .hero .inner{gap:18px}
+      .hero-visual{display:none}
       .products-grid{grid-template-columns:1fr}
-      .card .img{height:200px}
+      .card .img{height:180px}
+      .map-wrap{height:220px}
+      .about-grid{grid-template-columns:1fr}
+      .menu{display:none}
     }
 
     /* small helpers */
@@ -94,6 +109,9 @@
   <header class="site-header">
     <nav class="nav">
       <div class="logo">Damlam Çiçekçilik</div>
+      <!-- Mobile menu toggle -->
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Menüyü aç" />
+      <label for="menu-toggle" class="hamburger" aria-hidden="true">☰</label>
       <div class="menu" role="navigation" aria-label="Ana menü">
         <a href="#home">Anasayfa</a>
         <a href="#products">Ürünler</a>
